@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .fondoGradianteD {
+    background-image: radial-gradient(
+      at right center,
+      rgb(56, 189, 248),
+      rgb(49, 46, 129)
+    );
+
+    background-size: 300% 100%;
+    animation: gradient 5s ease infinite;
+  }
+  .fondoGradiante {
+    background-image: linear-gradient(
+      /* at right center,
+      rgb(56, 189, 248),
+      rgb(49, 46, 129) */ to
+        right,
+      rgb(17, 24, 39),
+      rgb(75, 85, 99)
+    );
+
+    background-size: 300% 100%;
+    animation: gradient 5s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
